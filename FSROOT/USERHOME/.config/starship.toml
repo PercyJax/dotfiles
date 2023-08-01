@@ -1,0 +1,88 @@
+format = """
+[  ](bg:shade1 fg:logo)\
+[($username@$hostname )](bg:shade1 fg:text1)\
+[](bg:shade2 fg:shade1)\
+$directory\
+[](fg:shade2 bg:shade3)\
+$git_branch\
+$git_status\
+[](fg:shade3 bg:shade4)\
+$nodejs\
+$rust\
+$golang\
+$php\
+[](fg:shade4 bg:shade5)\
+$time\
+$cmd_duration\
+[ ](fg:shade5)\
+\n$character"""
+
+palette = 'primary'
+
+[palettes.primary]
+shade1 = '#e0c2a3'
+shade2 = '#cc9966' # text3
+shade3 = '#996633' # text1
+shade4 = '#4d3319'
+shade5 = '#1f140a'
+logo = '#cc0066'
+text1 = '#996633' # shade3
+text2 = '#faf5f0' # directory
+text3 = '#e0c2a3' # shade1
+text4 = '#e0c2a3' # shade1
+
+[username]
+show_always = true
+format = '[$user]($style)'
+style_root = 'bg:shade1 fg:logo'
+style_user = 'bg:shade1 fg:text1'
+
+[hostname]
+ssh_only = false
+style = 'bg:shade1 fg:text1'
+format = '[$hostname]($style)'
+
+
+[directory]
+style = "fg:text2 bg:shade2"
+format = "[ $path ]($style)"
+truncation_length = 5
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙"
+"Downloads" = ""
+"Music" = ""
+"Pictures" = ""
+"Trantor" = "󰣳"
+"Projects" = ""
+
+[git_branch]
+symbol = ""
+style = "bg:shade3"
+format = '[[ $symbol $branch ](fg:text3 bg:shade3)]($style)'
+
+[git_status]
+style = "bg:shade3"
+format = '[[($all_status$ahead_behind )](fg:text3 bg:shade3)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:shade4"
+format = '[[ $symbol ($version) ](fg:text3 bg:shade4)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:shade4"
+format = '[[ $symbol ($version) ](fg:text3 bg:shade4)]($style)'
+
+[time]
+disabled = true
+#time_format = "%A %B %e, %Y @ %I:%M:%S %P %Z"
+style = "bg:shade5"
+format = '[[  $time ](fg:text4 bg:shade5)]($style)'
+
+[cmd_duration]
+disabled = false
+style = "bg:shade5"
+format = '[[  $duration ](fg:text4 bg:shade5)]($style)'
