@@ -4,4 +4,4 @@ After=graphical.target
 
 [Service]
 Type=oneshot
-ExecStart=~/.cargo/bin/kde_color
+ExecStart=%h/.cargo/bin/kde_color
