@@ -1,5 +1,8 @@
+[Unit]
+Requires=kde_color.service
+
 [Path]
-PathChanged=~/.config/kdeglobals
+PathChanged=%h/.config/kdeglobals
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
