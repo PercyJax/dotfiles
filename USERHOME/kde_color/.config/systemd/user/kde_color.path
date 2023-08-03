@@ -1,0 +1,5 @@
+[Path]
+PathChanged=~/.config/kdeglobals
+
+[Install]
+WantedBy=multi-user.target
