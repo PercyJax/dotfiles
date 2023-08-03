@@ -20,16 +20,16 @@ $cmd_duration\
 palette = 'primary'
 
 [palettes.primary]
-shade1 = '#e0c2a3'
-shade2 = '#cc9966' # text3
-shade3 = '#996633' # text1
-shade4 = '#4d3319'
-shade5 = '#1f140a'
+shade1 = "#F9D8D2"
+shade2 = "#F1AB9F"
+shade3 = "#EA7E6C"
+shade4 = "#932615"
+shade5 = "#60190E"
 logo = '#cc0066'
-text1 = '#996633' # shade3
-text2 = '#faf5f0' # directory
-text3 = '#e0c2a3' # shade1
-text4 = '#e0c2a3' # shade1
+text1 = "#60190E"
+text2 = "#60190E"
+text3 = "#60190E"
+text4 = "#F9D8D2"
 
 [username]
 show_always = true
@@ -69,12 +69,12 @@ format = '[[($all_status$ahead_behind )](fg:text3 bg:shade3)]($style)'
 [rust]
 symbol = ""
 style = "bg:shade4"
-format = '[[ $symbol ($version) ](fg:text3 bg:shade4)]($style)'
+format = '[[ $symbol ($version) ](fg:text4 bg:shade4)]($style)'
 
 [golang]
 symbol = ""
 style = "bg:shade4"
-format = '[[ $symbol ($version) ](fg:text3 bg:shade4)]($style)'
+format = '[[ $symbol ($version) ](fg:text4 bg:shade4)]($style)'
 
 [time]
 disabled = true

@@ -6,11 +6,6 @@ To make use of the automation scripts, a few prerequisites are recommended:
 sudo apt-get install stow xargs
 ```
 
-There may be submodules in this repo. To clone and pull all submodules, clone this repo with `--recurse-submodules`:
-```bash
-git clone https://github.com/PercyJax/dotfiles.git --recurse-submodules
-```
-
 ## Safe-Install Configurations
 > This will only create new links if files don't already exist and will skip already existant links.
 
