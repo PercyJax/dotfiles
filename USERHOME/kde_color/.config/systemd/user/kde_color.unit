@@ -1,7 +1,0 @@
-[Unit]
-Description=kde_color routine: paints non-kde programs with KDE color scheme
-After=graphical.target
-
-[Service]
-Type=oneshot
-ExecStart=~/.cargo/bin/kde_color
